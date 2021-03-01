@@ -3,13 +3,7 @@
   padding: 0px;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-  background: radial-gradient(circle, skyblue, steelblue);
-  font-size: 18px;
-}
-
-.container {
+.wrapper {
   width: 1000px;
   margin: 0 auto;
   background-color: white;
@@ -20,6 +14,12 @@ body {
   overflow: hidden;
 }
 
+body {
+  background: radial-gradient(circle, skyblue, steelblue);
+  font-size: 19px;
+  font-family: sans-serif;
+}
+
 .header {
   position: relative;
   top: 0;
@@ -28,18 +28,20 @@ body {
   justify-content: space-between;
 }
 
-.name {
-  width: 30%;
+.block_name {
+  width: 710px;
+  height: 170px;
   font-size: 35px;
   font-weight: bold;
-  padding-top: 4%;
   float: right;
   display: block;
   background-color: rgb(255, 238, 0);
-  padding-right: 36%;
-  padding-left: 5%;
-  padding-bottom: 3%;
   border-radius: initial;
+}
+
+.name {
+  padding-top: 4%;
+  padding-left: 5%;
 }
 
 .profession {
@@ -70,13 +72,15 @@ body {
   color: black;
 }
 
-.section-title {
+.section_name {
   font-weight: bold;
   font-size: 26px;
   margin-bottom: 25px;
+  background-color: gainsboro;
 }
 
-.section-title::after {
+.section_name::after,
+.section_name::before {
   content: "";
   display: block;
   width: 100%;
@@ -84,19 +88,15 @@ body {
   background-color: #000;
 }
 
-.section-list {
+.list {
   list-style-type: none;
 }
 
-.section-list-item {
+.list_paragraph {
   margin-bottom: 18px;
   padding-left: 6%;
   padding-top: 1%;
   padding-bottom: 1%;
-}
-
-.section-list-item > span {
-  font-weight: bold;
 }
 
 .main {
@@ -104,12 +104,8 @@ body {
   margin: 60px auto 0;
 }
 
-.main-section:last-child {
-  margin-left: 0px;
-}
-
-.main-section {
-  margin-bottom: 50px;
+.section {
+  margin-bottom: 40px;
 }
 
 .footer {
